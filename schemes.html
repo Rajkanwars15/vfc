@@ -40,11 +40,24 @@
 </head>
 
 <body class="main-layout">
-<!-- loader -->
-<div class="loader_bg">
+<!-- loader  -->
+<div id="loader_bg" class="loader_bg">
   <div class="loader"><img src="images/loading.gif" alt="#" /></div>
 </div>
 <!-- end loader -->
+
+<script>
+  // Wait for the page to load
+  window.addEventListener('load', function() {
+    // Select the loader element
+    var loaderBg = document.getElementById('loader_bg');
+    
+    // Set a timeout to hide the loader after a certain duration (e.g., 3 seconds)
+    setTimeout(function() {
+      loaderBg.style.display = 'none';
+    }, 1); // Adjust the duration as needed
+  });
+</script>
 
 <header>
   <!-- header inner -->
